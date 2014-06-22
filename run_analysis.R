@@ -69,4 +69,5 @@ ddply(cleanDataSet, .(actname, subjectid), summarize,
       avg_mean_totalaccz=mean(mean_totalaccz),
       avg_sd_totalaccz=mean(sd_totalaccz))
 
-?ddply
+write.table(tidydataset, "./tidydataset.txt", sep=" ")
+tidydataset
